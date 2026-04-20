@@ -128,15 +128,22 @@
   </div>
 
   <!-- FATEC -->
-  <div class="project-group">
-    <div class="project-group__top">
-      <h3>Projetos Interdisciplinares (FATEC Itaquera)</h3>
-    </div>
+<div class="project-group">
+  <h3>Projetos Interdisciplinares (FATEC Itaquera)</h3>
 
-    <div class="project-carousel" id="fatec-projects">
-      <!-- cards gerados via JS -->
-    </div>
+  <div class="project-slider">
+    <button class="slider-btn prev" onclick="slideProjects('fatec-projects', -1)">
+      ‹
+    </button>
+
+    <div class="project-carousel" id="fatec-projects"></div>
+
+    <button class="slider-btn next" onclick="slideProjects('fatec-projects', 1)">
+      ›
+    </button>
   </div>
+</div>
+
 
   <!-- Pessoais -->
   <div class="project-group">

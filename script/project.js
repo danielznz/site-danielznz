@@ -4,7 +4,7 @@ const fatecProjects = [
     description:
       "Protótipo de interface criado com foco em design moderno, usabilidade e experiência do usuário.",
 
-    cover: "/assets/img/p2/p2-thumb.png",
+    cover: "/assets/img/p1/p1-thumb.png",
 
     technologies: [
       "Figma",
@@ -291,3 +291,127 @@ function closeProject() {
 ========================= */
 renderProjects(fatecProjects, "fatec-projects");
 renderProjects(personalProjects, "personal-projects");
+
+/* ADICIONE NO SEU JS */
+
+function openProject(project) {
+  const details = document.getElementById("projectDetails");
+  const isLocalVideo = project.video.endsWith(".mp4");
+
+  details.innerHTML = `
+    <div class="project-details">
+      <h2>${project.title}</h2>
+
+      <p>${project.description}</p>
+
+      <div class="project-techs">
+        ${renderTechs(project.technologies)}
+      </div>
+
+      ${
+        isLocalVideo
+          ? `
+          <video class="project-video" controls>
+            <source src="${project.video}" type="video/mp4">
+          </video>
+        `
+          : `
+          <iframe
+            class="project-video"
+            src="${project.video}"
+            frameborder="0"
+            allowfullscreen>
+          </iframe>
+        `
+      }
+
+      <div class="project-info-box">
+        <h3>Sobre o projeto</h3>
+        <p>${project.fullDescription}</p>
+      </div>
+
+      <div class="project-gallery">
+        ${project.images.map(img => `
+          <img src="${img}" onclick="openImage('${img}')">
+        `).join("")}
+      </div>
+
+      <div class="project-actions" style="margin-top:2rem;">
+        <a class="project-link" href="${project.github}" target="_blank">
+          Ver GitHub
+        </a>
+      </div>
+    </div>
+  `;
+
+  document.getElementById("projectModal").classList.add("active");
+}
+
+/* lightbox */
+function openImage(src) {
+  let lightbox = document.getElementById("imageLightbox");
+
+  if (!lightbox) {
+    lightbox = document.createElement("div");
+    lightbox.id = "imageLightbox";
+    lightbox.className = "image-lightbox";
+    lightbox.innerHTML = `<img><span></span>`;
+    lightbox.onclick = closeImage;
+    document.body.appendChild(lightbox);
+  }
+
+  lightbox.querySelector("img").src = src;
+  lightbox.classList.add("active");
+}
+
+function closeImage() {
+  document.getElementById("imageLightbox").classList.remove("active");
+}
+
+/* =========================
+   BOTÕES DAS SETAS
+========================= */
+function slideProjects(id, direction) {
+  const slider = document.getElementById(id);
+  const distance = 360;
+
+  slider.scrollBy({
+    left: distance * direction,
+    behavior: "smooth"
+  });
+}
+
+/* =========================
+   ARRASTAR COM MOUSE
+========================= */
+document.querySelectorAll(".project-carousel").forEach(slider => {
+  let isDown = false;
+  let startX;
+  let scrollLeft;
+
+  slider.addEventListener("mousedown", e => {
+    isDown = true;
+    slider.classList.add("dragging");
+    startX = e.pageX - slider.offsetLeft;
+    scrollLeft = slider.scrollLeft;
+  });
+
+  slider.addEventListener("mouseleave", () => {
+    isDown = false;
+  });
+
+  slider.addEventListener("mouseup", () => {
+    isDown = false;
+  });
+
+  slider.addEventListener("mousemove", e => {
+    if (!isDown) return;
+
+    e.preventDefault();
+
+    const x = e.pageX - slider.offsetLeft;
+    const walk = (x - startX) * 1.5;
+
+    slider.scrollLeft = scrollLeft - walk;
+  });
+});
