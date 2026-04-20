@@ -1,0 +1,44 @@
+.projects {
+    padding: 7rem 8%;
+    color: #fff
+}
+
+.project-carousel {
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    padding: 1rem 0
+}
+
+.project-card {
+    min-width: 320px;
+    background: var(--color-surface);
+    padding: 1.5rem;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .3s
+}
+
+.project-card:hover {
+    transform: translateY(-6px)
+}
+
+.project-modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, .75);
+    display: none;
+    align-items: center;
+    justify-content: center
+}
+
+.project-modal.active {
+    display: flex
+}
+
+.project-modal__content {
+    width: min(900px, 92%);
+    background: var(--color-accent-dim);
+    padding: 2rem;
+    border-radius: 24px
+}

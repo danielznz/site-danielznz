@@ -7,8 +7,9 @@
     <link rel="stylesheet" href="/style/style.css">
     <link rel="stylesheet" href="/style/hero.css">
     <link rel="stylesheet" href="/style/about.css">
+    <link rel="stylesheet" href="/style/project.css">
     <link rel="stylesheet" href="/style/reponsive/responsive-hero.css">
-        <link rel="stylesheet" href="/style/reponsive/responsive-about.css">
+    <link rel="stylesheet" href="/style/reponsive/responsive-about.css">
 
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -116,6 +117,33 @@
         </div>
     </section>
 
+
+
+ <section class="projects" id="projetos">
+  <div class="projects__header">
+    <span>Portfólio</span>
+    <h2>Meus Projetos</h2>
+  </div>
+
+  <div class="project-group">
+    <h3>Projetos Interdisciplinares (FATEC Itaquera)</h3>
+    <div class="project-carousel" id="fatec-projects"></div>
+  </div>
+
+  <div class="project-group">
+    <h3>Projetos Pessoais</h3>
+    <div class="project-carousel" id="personal-projects"></div>
+  </div>
+</section>
+
+<div class="project-modal" id="projectModal">
+  <div class="project-modal__content">
+    <button class="project-close" onclick="closeProject()">✕</button>
+    <div id="projectDetails"></div>
+  </div>
+</div>
+
+
     <script>
         const hamburger = document.getElementById('hamburger');
         const menu = document.getElementById('nav-menu');
@@ -126,6 +154,8 @@
         });
     </script>
 
+
+<script src="./script/project.js"></script>
 </body>
 
 </html>
