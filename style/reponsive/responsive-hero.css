@@ -1,0 +1,140 @@
+/* =========================
+   MOBILE FIRST (base já pensada pra mobile)
+========================= */
+
+@media (max-width: 768px) {
+
+  .hero {
+    padding: 20px;
+    justify-content: center;
+  }
+
+  /* NAVBAR */
+  .navbar__logo {
+    font-size: 18px;
+  }
+
+  .navbar__hamburger {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .navbar__hamburger span {
+    width: 24px;
+    height: 2px;
+    background: var(--color-text-primary);
+  }
+
+  .navbar__menu {
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    flex-direction: column;
+    background: rgba(2, 6, 23, 0.95);
+    backdrop-filter: blur(12px);
+    padding: 20px;
+    border-radius: 12px;
+    gap: 16px;
+    display: none;
+  }
+
+  .navbar__menu.is-open {
+    display: flex;
+  }
+
+  .navbar__divider {
+    display: none;
+  }
+
+  .navbar__menu a {
+    font-size: 16px;
+  }
+
+  /* HERO CONTENT */
+  .hero-content {
+    margin-top: 20px;
+    padding: 0 10px;
+    max-width: 100%;
+  }
+
+  /* 🔥 TIPOGRAFIA ESTILO DO EXEMPLO */
+  .hero-content h2 {
+    font-size: clamp(3rem, 12vw, 4.5rem);
+    line-height: 1;
+    letter-spacing: -1px;
+    word-break: break-word;
+  }
+
+  /* TEXTO */
+  .hero-content p {
+    font-size: 14px;
+    margin-top: 16px;
+    line-height: 1.5;
+  }
+
+  /* BOTÃO */
+  .btn-cv {
+    width: 100%;
+    justify-content: center;
+    margin-top: 24px;
+  }
+
+  /* STATS (se estiver usando) */
+  .stats {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    font-size: 12px;
+  }
+
+  /* BLUR ORBS AJUSTADOS */
+  .orb-1 {
+    width: 500px;
+    height: 500px;
+    filter: blur(120px);
+    opacity: 0.6;
+  }
+
+  .orb-2 {
+    width: 400px;
+    height: 400px;
+    filter: blur(120px);
+    opacity: 0.5;
+  }
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+  .hero-content h2 {
+    font-size: clamp(4rem, 8vw, 5.5rem);
+  }
+
+  .hero-content {
+    max-width: 600px;
+  }
+}
+
+
+/* =========================
+   DESKTOP GRANDE (refino)
+========================= */
+
+@media (min-width: 1200px) {
+
+  .hero-content h2 {
+    font-size: 7rem;
+  }
+
+  .hero-content {
+    max-width: 800px;
+  }
+}
