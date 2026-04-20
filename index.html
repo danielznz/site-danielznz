@@ -118,28 +118,54 @@
     </section>
 
 
-
- <section class="projects" id="projetos">
+<section class="projects" id="projetos">
   <div class="projects__header">
     <span>Portfólio</span>
     <h2>Meus Projetos</h2>
+    <p>
+      Alguns dos projetos que desenvolvi ao longo da graduação e também em estudos pessoais.
+    </p>
   </div>
 
+  <!-- FATEC -->
   <div class="project-group">
-    <h3>Projetos Interdisciplinares (FATEC Itaquera)</h3>
-    <div class="project-carousel" id="fatec-projects"></div>
+    <div class="project-group__top">
+      <h3>Projetos Interdisciplinares (FATEC Itaquera)</h3>
+    </div>
+
+    <div class="project-carousel" id="fatec-projects">
+      <!-- cards gerados via JS -->
+    </div>
   </div>
 
+  <!-- Pessoais -->
   <div class="project-group">
-    <h3>Projetos Pessoais</h3>
-    <div class="project-carousel" id="personal-projects"></div>
+    <div class="project-group__top">
+      <h3>Projetos Pessoais</h3>
+    </div>
+
+    <div class="project-carousel" id="personal-projects">
+      <!-- cards gerados via JS -->
+    </div>
   </div>
 </section>
 
+<!-- Modal -->
 <div class="project-modal" id="projectModal">
+
+  <!-- overlay fecha -->
+  <div class="project-modal__overlay" onclick="closeProject()"></div>
+
   <div class="project-modal__content">
-    <button class="project-close" onclick="closeProject()">✕</button>
-    <div id="projectDetails"></div>
+
+    <button class="project-close" onclick="closeProject()" aria-label="Fechar modal">
+      ✕
+    </button>
+
+    <div id="projectDetails">
+      <!-- conteúdo gerado via JS -->
+    </div>
+
   </div>
 </div>
 
