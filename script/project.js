@@ -11,7 +11,7 @@ const fatecProjects = [
       "Photoshop"
     ],
 
-    github: "https://github.com/danielznz/PI_5_semestre",
+    github: "https://www.figma.com/design/S9ktJk36m1krUVHgomcuxO/Recicle-Aqui?node-id=0-1&t=BNtTTun7oerF4gva-1",
     video: "/assets/img/p1/p1-video.mp4",
 
     fullDescription:
@@ -41,7 +41,7 @@ const fatecProjects = [
       "MySQL"
     ],
 
-    github: "https://github.com/danielznz/PI_5_semestre",
+    github: "https://github.com/danielznz/ProvaWebDaniel-main",
     video: "/assets/img/p2/p2-video.mp4",
 
     fullDescription:
@@ -71,8 +71,8 @@ const fatecProjects = [
       "Java"
     ],
 
-    github: "https://github.com/danielznz/PI_5_semestre",
-    video: "/assets/img/p3/p3-video.mp4",
+    github: "https://github.com/danielznz/SpringToys",
+    video: "",
 
     fullDescription:
       "Projeto desenvolvido com foco em design visual, experiência do usuário e interatividade. O objetivo era criar uma plataforma online para exibir diferentes categorias de brinquedos de maneira atrativa e envolvente. Toda a identidade visual foi construída para transmitir criatividade, leveza e diversão, utilizando cores vibrantes, elementos lúdicos e uma navegação simples para facilitar a exploração dos produtos. Fui responsável pelo desenvolvimento da interface visual, estilização com CSS e implementação de interações utilizando JavaScript, buscando criar uma experiência agradável e dinâmica para o usuário.",
@@ -80,7 +80,6 @@ const fatecProjects = [
     images: [
       "/assets/img/p3/p3-img1.png",
       "/assets/img/p3/p3-img2.png",
-      "/assets/img/p3/p3-img3.png",
       "/assets/img/p3/p3-img4.png",
       "/assets/img/p3/p3-img5.png"
     ]
@@ -103,7 +102,7 @@ const fatecProjects = [
       "MySQL"
     ],
 
-    github: "https://github.com/danielznz/PI_5_semestre",
+    github: "https://github.com/danielznz/Projeto-Inter",
     video: "/assets/img/p4/p4-video.mp4",
 
     fullDescription:
@@ -127,6 +126,8 @@ const fatecProjects = [
 
     technologies: [
       "React Native",
+      "Typescript",
+      "Javascript",
       "Firebase",
       "Figma"
     ],
@@ -308,14 +309,13 @@ function openProject(project) {
         ${renderTechs(project.technologies)}
       </div>
 
-      ${
-        isLocalVideo
-          ? `
+      ${isLocalVideo
+      ? `
           <video class="project-video" controls>
             <source src="${project.video}" type="video/mp4">
           </video>
         `
-          : `
+      : `
           <iframe
             class="project-video"
             src="${project.video}"
@@ -323,7 +323,7 @@ function openProject(project) {
             allowfullscreen>
           </iframe>
         `
-      }
+    }
 
       <div class="project-info-box">
         <h3>Sobre o projeto</h3>

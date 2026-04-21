@@ -380,14 +380,3 @@
 .slider-btn.next {
   right: -20px;
 }
-
-/* mobile */
-@media (max-width: 768px) {
-  .slider-btn {
-    display: none;
-  }
-
-  .project-card {
-    flex: 0 0 88%;
-  }
-}
