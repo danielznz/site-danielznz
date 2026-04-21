@@ -1,0 +1,100 @@
+/* =====================
+   SKILLS SECTION
+   ===================== */
+
+.skills-wrapper {
+  padding: 100px 0;
+}
+
+.skills {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.skills__title {
+  font-size: 48px;
+  font-weight: bold;
+  color: var(--color-text-primary);
+  margin-bottom: 48px;
+}
+
+/* GRID LADO A LADO */
+.skills__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  align-items: start;
+}
+
+/* GRUPO (título + card) */
+.skills__group {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.skills__subtitle {
+  font-size: 22px;
+  font-weight: bold;
+  color: var(--color-text-primary);
+}
+
+/* CARD */
+.skills__card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--color-border);
+  border-radius: 16px;
+  padding: 28px;
+  transition: border-color 0.2s;
+}
+
+.skills__card:hover {
+  border-color: rgba(34, 197, 94, 0.25);
+}
+
+/* TAGS */
+.skills__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill-tag {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: default;
+  transition: transform 0.15s, background 0.2s, border-color 0.2s;
+}
+
+.skill-tag:hover {
+  transform: translateY(-2px);
+}
+
+/* HARD — borda verde sutil no hover */
+.skill-tag--hard {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--color-border);
+  color: var(--color-text-primary);
+}
+
+.skill-tag--hard:hover {
+  background: rgba(34, 197, 94, 0.08);
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+}
+
+/* SOFT — tom mais sutil */
+.skill-tag--soft {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--color-border);
+  color: var(--color-text-muted);
+}
+
+.skill-tag--soft:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.2);
+  color: var(--color-text-primary);
+}

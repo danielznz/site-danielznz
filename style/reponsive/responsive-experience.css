@@ -1,0 +1,77 @@
+/* =====================================================
+   RESPONSIVE EXPERIENCE
+   Breakpoints: tablet ≤ 768px | mobile ≤ 480px
+   ===================================================== */
+
+@media (max-width: 768px) {
+
+  .experience-wrapper {
+    padding: 60px 0;
+  }
+
+  .experience {
+    padding: 0 20px;
+  }
+
+  .experience__title {
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+
+  /* empilha tudo em coluna, sem grid de 3 colunas */
+  .experience__item {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    padding-left: 24px;
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+    position: relative;
+    min-height: unset;
+    margin-bottom: 40px;
+  }
+
+  .experience__item:last-child {
+    margin-bottom: 0;
+  }
+
+  /* dot fica na borda esquerda */
+  .experience__dot {
+    position: absolute;
+    left: -7px;
+    top: 4px;
+    margin-top: 0;
+  }
+
+  /* esconde a linha central original */
+  .experience__line {
+    display: none;
+  }
+
+  .experience__left {
+    padding: 0 0 12px 0;
+  }
+
+  .experience__left h3 {
+    font-size: 18px;
+  }
+
+  .experience__right {
+    padding: 0;
+  }
+
+  .experience__right p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .experience__title {
+    font-size: 28px;
+    margin-bottom: 32px;
+  }
+
+  .experience__left h3 {
+    font-size: 16px;
+  }
+}

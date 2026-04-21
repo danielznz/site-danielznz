@@ -1,0 +1,42 @@
+/* =====================================================
+   RESPONSIVE EDUCATION
+   ===================================================== */
+
+@media (max-width: 768px) {
+
+  .education-wrapper {
+    padding: 60px 0;
+  }
+
+  .education {
+    padding: 0 20px;
+  }
+
+  .education__title {
+    font-size: 36px;
+    margin-bottom: 32px;
+  }
+
+  .education__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .education__card {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .education__title {
+    font-size: 28px;
+  }
+
+  .education__flag {
+    font-size: 26px;
+  }
+
+  .education__institution {
+    font-size: 15px;
+  }
+}
