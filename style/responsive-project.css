@@ -1,4 +1,3 @@
-
 @media (max-width: 768px) {
   .slider-btn {
     display: none;
@@ -6,12 +5,30 @@
 
   .project-card {
     flex: 0 0 88%;
+    min-width: 0; /* evita o card ultrapassar o container */
+    box-sizing: border-box;
+  }
+
+  .project-carousel {
+    overflow: hidden; /* garante que não vaza nas laterais */
+    padding: 0 6%;
+  }
+
+  .project-slider {
+    overflow: hidden;
   }
 }
 
-/* =========================
-   RESPONSIVO
-========================= */
+@media (max-width: 480px) {
+  .project-card {
+    flex: 0 0 92%;
+  }
+
+  .project-carousel {
+    padding: 0 4%;
+  }
+}
+
 @media (max-width: 980px) {
   .project-media-layout {
     grid-template-columns: 1fr;
@@ -22,7 +39,7 @@
   }
 
   .project-gallery {
-    grid-template-columns: repeat(auto-fit, minmax(140px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
     max-height: none;
     overflow: visible;
   }
@@ -40,6 +57,8 @@
   .project-modal__content {
     padding: 1.2rem;
     border-radius: 18px;
+    max-height: 90vh;
+    overflow-y: auto; /* permite scroll dentro do modal se o conteúdo for grande */
   }
 
   .project-details h2 {
@@ -53,4 +72,56 @@
   .project-gallery img {
     height: 100px;
   }
+}
+
+@media (max-width: 768px) {
+
+  .slider-btn {
+    display: none !important;
+  }
+
+  .project-group {
+    overflow: hidden; /* corta qualquer coisa que vaze */
+    width: 100%;
+  }
+
+  .project-slider {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+  }
+
+  .project-carousel {
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;        /* Firefox — esconde scrollbar */
+    -ms-overflow-style: none;     /* IE/Edge — esconde scrollbar */
+    padding: 0;
+    width: 100%;
+    gap: 16px;
+  }
+
+  .project-carousel::-webkit-scrollbar {
+    display: none;                /* Chrome/Safari — esconde scrollbar */
+  }
+
+  .project-card {
+    flex: 0 0 85%;
+    scroll-snap-align: start;
+    min-width: 0;
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 480px) {
+  .project-card {
+    flex: 0 0 90%;
+  }
+}
+
+
+html, body {
+  overflow-x: hidden;
+  max-width: 100%;
 }

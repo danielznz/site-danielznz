@@ -128,3 +128,27 @@ section {
     padding: 40px 0;
   }
 }
+
+html {
+  scrollbar-width: thin;                          /* Firefox */
+  scrollbar-color: var(--color-accent) transparent;
+}
+
+::-webkit-scrollbar {
+  width: 4px;                                     /* Chrome, Safari, Edge */
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-accent);
+  border-radius: 4px;
+}
+
+
+html, body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
