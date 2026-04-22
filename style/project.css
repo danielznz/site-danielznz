@@ -1,7 +1,11 @@
 .projects {
-  padding: 7rem 6%;
+
   color: #fff;
   overflow-x: hidden;
+}
+
+.projects p {
+  color: var(--color-text-muted);
 }
 
 .projects__header {
@@ -9,7 +13,7 @@
 }
 
 .projects__header span {
-  color: var(--color-text-muted);
+  color: var(--color-text-border);
   font-size: 0.95rem;
 }
 

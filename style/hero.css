@@ -25,21 +25,6 @@
   animation: floatB 13s ease-in-out infinite;
 }
 
-@keyframes floatA {
-  0%   { transform: translate(0, 0) scale(1); }
-  33%  { transform: translate(-30px, 40px) scale(1.06); }
-  66%  { transform: translate(40px, -30px) scale(0.96); }
-  100% { transform: translate(0, 0) scale(1); }
-}
-
-@keyframes floatB {
-  0%   { transform: translate(0, 0) scale(1); }
-  33%  { transform: translate(50px, -50px) scale(1.05); }
-  66%  { transform: translate(-35px, 35px) scale(0.97); }
-  100% { transform: translate(0, 0) scale(1); }
-}
-
-
 .hero-wrapper {
   position: relative;
   height: 100vh;
@@ -51,10 +36,10 @@
   position: relative;
   z-index: 1;
   height: 100%;
-  padding: 40px;
+  padding: 40px 0;  /* só vertical, zero nas laterais — o .container cuida do horizontal */
   display: flex;
   flex-direction: column;
-  
+    max-width: 1200px;
 }
 
 .navbar {
