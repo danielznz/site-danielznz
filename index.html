@@ -3,24 +3,25 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Meu Portfólio</title>
+  <title>Portfólio Daniel Teixeira</title>
   <link rel="stylesheet" href="/style/style.css">
   <link rel="stylesheet" href="/style/hero.css">
   <link rel="stylesheet" href="/style/about.css">
   <link rel="stylesheet" href="/style/project.css">
   <link rel="stylesheet" href="/style/education.css">
   <link rel="stylesheet" href="/style/skillls.css">
+  <link rel="stylesheet" href="/style/footer.css">
   <link rel="stylesheet" href="/style/responsive/responsive-education.css">
   <link rel="stylesheet" href="/style/reponsive/responsive-hero.css">
   <link rel="stylesheet" href="/style/reponsive/responsive-about.css">
   <link rel="stylesheet" href="/style/experience.css">
   <link rel="stylesheet" href="/style/reponsive/responsive-experience.css">
-
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
+
+    <link rel="icon" href="/assets/icons/logo.png" type="image/x-icon">
 </head>
 
 <body>
@@ -39,8 +40,8 @@
         </button>
 
         <ul class="navbar__menu" id="nav-menu">
-          <li><a href="#">Sobre mim</a></li>
-          <li><a href="#">Projetos</a></li>
+          <li><a href="#sobre">Sobre mim</a></li>
+          <li><a href="#projetos">Projetos</a></li>
           <li class="navbar__divider"></li>
           <li>
             <a href="https://www.linkedin.com/in/danielznz/" target="_blank" aria-label="LinkedIn">
@@ -64,27 +65,30 @@
       <div class="hero-content">
         <h2>
           Desenvolvedor<br />
-          de Software<span class="cursor">|</span>
+          <span id="dynamic-text">de Software</span><span class="cursor">|</span>
         </h2>
         <p>
-          Sou um desenvolvedor que gosta de criar aplicações reais, complexas e desafiadoras.
-          Desde backends seguros e escaláveis até interfaces modernas e intuitivas.
+        <p>
+        <p>
+          Estudante de Desenvolvimento de Software com experiência em desenvolvimento web e foco em frontend.
         </p>
-        <a href="/cv.pdf" download class="btn-cv">
+        </p>
+        </p>
+        <a href="http://lattes.cnpq.br/1666110903028333" download class="btn-cv">
           <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
             <polyline points="7 10 12 15 17 10" />
             <line x1="12" y1="15" x2="12" y2="3" />
           </svg>
-          Baixar CV
+          Ver CV
         </a>
       </div>
 
     </div>
   </header>
 
-  <section class="about" id="sobre">
+  <section class="about reveal" id="sobre">
     <div class="about__container">
 
       <div class="about__image-wrapper">
@@ -95,11 +99,9 @@
 
       <div class="about__content">
         <span class="about__tag">Sobre mim</span>
-
         <h2>
           Minha trajetória
         </h2>
-
         <p>
           Desenvolvo projetos para web há alguns anos, quando comecei a estudar
           HTML, CSS e JavaScript focado no front-end. Desde então venho evoluindo
@@ -122,7 +124,7 @@
 
 
 
-  <section class="projects" id="projetos">
+  <section class="projects reveal" id="projetos">
     <div class="projects__header">
       <h2>Meus Projetos</h2>
       <p>
@@ -167,8 +169,7 @@
     </div>
   </div>
 
-
-  <section class="skills-wrapper">
+  <section class="skills-wrapper reveal">
     <div class="skills">
 
       <div class="skills__grid">
@@ -187,24 +188,69 @@
           </div>
         </div>
 
+        <!-- NOVO BLOCO -->
+        <div class="skills__group">
+          <div class="skills__card">
+            <div class="languages" id="languages-list"></div>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
 
 
-  <section class="experience-wrapper">
+  <section class="experience-wrapper reveal">
     <div class="experience">
       <h2 class="experience__title">Experiência</h2>
       <div class="experience__list" id="experience-list"></div>
     </div>
   </section>
 
-  <section class="education-wrapper">
+  <section class="education-wrapper reveal">
     <div class="education">
       <h2 class="education__title">Formação</h2>
       <div class="education__grid" id="education-grid"></div>
     </div>
   </section>
+
+  <footer class="footer">
+    <div class="footer__container">
+
+      <!-- ESQUERDA -->
+      <div class="footer__left">
+        <h2 class="footer__title">Daniel Teixeira</h2>
+
+        <div class="footer__info">
+          <div class="footer__item">
+            <span>Email</span>
+            <a href="mailto:daniel.teixeira.corporativo@gmail.com">daniel.teixeira.corporativo@gmail.com</a>
+          </div>
+
+          <div class="footer__item">
+            <span>Localização</span>
+            <p>São Paulo - SP</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- CENTRO -->
+      <div class="footer__center">
+        <span class="footer__label">Redes sociais</span>
+
+        <a href="https://github.com/danielznz" target="_blank">GITHUB ↗</a>
+        <a href="https://www.linkedin.com/in/danielznz/" target="_blank">LINKEDIN ↗</a>
+      </div>
+
+      <!-- DIREITA -->
+      <div class="footer__right">
+        <p>Criado e desenvolvido por</p>
+        <strong>Daniel Teixeira</strong>
+        <span>© <span id="year"></span></span>
+      </div>
+
+    </div>
+  </footer>
 
 
   <script>
@@ -217,11 +263,45 @@
     });
   </script>
 
+  <script>
+const words = ["de Software", "Frontend"];
+let i = 0;
+let j = 0;
+let isDeleting = false;
 
+const speed = 60;
+const delay = 2000;
+
+function typeEffect() {
+  const currentWord = words[i];
+  const textElement = document.getElementById("dynamic-text");
+
+  if (isDeleting) {
+    j--;
+  } else {
+    j++;
+  }
+
+  textElement.textContent = currentWord.substring(0, j);
+
+  if (!isDeleting && j === currentWord.length) {
+    setTimeout(() => isDeleting = true, delay);
+  } else if (isDeleting && j === 0) {
+    isDeleting = false;
+    i = (i + 1) % words.length;
+  }
+
+  setTimeout(typeEffect, isDeleting ? speed / 2 : speed);
+}
+
+typeEffect();
+</script>
   <script src="./script/project.js"></script>
   <script src="./script/experience.js"></script>
   <script src="./script/education.js"></script>
   <script src="./script/skills.js"></script>
+  <script src="./script/footer.js"></script>
+  <script src="./script/script.js"></script>
 </body>
 
 </html>

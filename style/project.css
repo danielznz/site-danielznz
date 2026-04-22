@@ -1,10 +1,7 @@
-/* =========================
-   PROJECTS
-========================= */
 .projects {
   padding: 7rem 6%;
   color: #fff;
-   overflow-x: hidden;
+  overflow-x: hidden;
 }
 
 .projects__header {
@@ -30,12 +27,6 @@
   font-size: 1.4rem;
 }
 
-/* =========================
-   CAROUSEL
-========================= */
-/* =========================
-   CAROUSEL
-========================= */
 .project-carousel {
   max-width: 1400px;
   margin: 0 auto;
@@ -44,7 +35,7 @@
   overflow-x: auto;
   padding: 1rem 0;
   scroll-snap-type: x mandatory;
-   overflow-x: hidden;
+  overflow-x: hidden;
 
   /* remove scrollbar */
   scrollbar-width: none;
@@ -58,9 +49,6 @@
   /* Chrome/Safari */
 }
 
-/* =========================
-   CARD
-========================= */
 .project-card {
   min-width: 340px;
   max-width: 340px;
@@ -115,7 +103,6 @@
   font-size: .82rem;
 }
 
-/* actions */
 .project-actions {
   display: flex;
   gap: .8rem;
@@ -134,24 +121,21 @@
 }
 
 .project-btn {
-  background: #fff;
-  color: #000;
+  background: var(--color-text-primary);
+  color: var(--color-surface);
 }
 
 .project-link {
   background: transparent;
-  color: #fff;
-  border: 1px solid rgba(255, 255, 255, .15);
+  color: var(--color-text-primary);
+  border: 1px solid var(--color-border);
 }
 
-/* =========================
-   CARD PADRONIZADO
-========================= */
 .project-card {
   min-width: 340px;
   max-width: 340px;
   background: var(--color-surface);
-  border: 1px solid rgba(255, 255, 255, .06);
+  border: 1px solid var(--color-border);
   border-radius: 22px;
   overflow: hidden;
   transition: .3s ease;
@@ -170,7 +154,6 @@
   min-height: 90px;
 }
 
-/* empurra botões para baixo */
 .project-actions {
   display: flex;
   gap: .8rem;
@@ -186,9 +169,6 @@
   text-align: center;
 }
 
-/* =========================
-   MODAL
-========================= */
 .project-modal {
   position: fixed;
   inset: 0;
@@ -229,7 +209,6 @@
   cursor: pointer;
 }
 
-/* content modal */
 .project-details h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
@@ -240,9 +219,6 @@
   line-height: 1.8;
 }
 
-/* =========================
-   MODAL VIDEO MENOR
-========================= */
 .project-video {
   width: 100%;
   max-width: 620px;
@@ -256,7 +232,7 @@
 /* descrição expandida */
 .project-info-box {
   background: var(--color-modal);
-  border: 1px solid  var(--color-border);
+  border: 1px solid var(--color-border);
   padding: 1rem;
   border-radius: 18px;
   margin: 1.5rem 0;
@@ -277,10 +253,6 @@
   border-radius: 14px;
 }
 
-
-/* =========================
-   GALERIA CLICÁVEL
-========================= */
 .project-gallery img {
   width: 100%;
   height: 120px;
@@ -294,13 +266,11 @@
   transform: scale(1.03);
 }
 
-/* =========================
-   LIGHTBOX
-========================= */
 .image-lightbox {
   position: fixed;
   inset: 0;
-  background: var(--color-modal);;
+  background: var(--color-modal);
+  ;
   display: none;
   align-items: center;
   justify-content: center;
@@ -318,18 +288,12 @@
   border-radius: 18px;
 }
 
-/* =========================
-   WRAPPER DO CARROSSEL
-========================= */
 .project-slider {
   position: relative;
   max-width: 1400px;
   margin: 0 auto;
 }
 
-/* =========================
-   CARROSSEL ARRASTÁVEL
-========================= */
 .project-carousel {
   display: flex;
   gap: 1.2rem;
@@ -356,9 +320,6 @@
   scroll-snap-align: start;
 }
 
-/* =========================
-   SETAS
-========================= */
 .slider-btn {
   position: absolute;
   top: 50%;
@@ -388,7 +349,6 @@
   right: -30px;
 }
 
-/* Scrollbar customizada */
 .project-modal__content::-webkit-scrollbar {
   width: 10px;
 }

@@ -1,11 +1,3 @@
-/* ==========================================
-   PROJETOS - PORTFÓLIO DANIEL
-========================================== */
-
-/* ==========================================
-   DADOS DOS PROJETOS
-========================================== */
-
 const fatecProjects = [
   {
     title: "Layout Site | 1º Semestre",
@@ -323,10 +315,6 @@ function openProject(project) {
   document.body.style.overflow = "hidden";
 }
 
-/* ==========================================
-   FECHAR MODAL
-========================================== */
-
 function closeProject() {
   const modal = document.getElementById("projectModal");
   if (!modal) return;
@@ -336,9 +324,6 @@ function closeProject() {
   document.body.style.overflowY = "auto";
   document.body.style.overflowX = "hidden";
 }
-/* ==========================================
-   LIGHTBOX IMAGEM
-========================================== */
 
 function openImage(src) {
   let lightbox = document.getElementById("imageLightbox");
@@ -363,19 +348,12 @@ function closeImage() {
   if (lightbox) lightbox.classList.remove("active");
 }
 
-/* ==========================================
-   FECHAR AO CLICAR FORA
-========================================== */
-
 document.getElementById("projectModal")?.addEventListener("click", (e) => {
   if (e.target.id === "projectModal") {
     closeProject();
   }
 });
 
-/* ==========================================
-   ESC FECHA MODAL
-========================================== */
 
 document.addEventListener("keydown", (e) => {
   if (e.key === "Escape") {
@@ -384,9 +362,6 @@ document.addEventListener("keydown", (e) => {
   }
 });
 
-/* ==========================================
-   SETAS CARROSSEL
-========================================== */
 
 function slideProjects(id, direction) {
   const slider = document.getElementById(id);
@@ -397,10 +372,6 @@ function slideProjects(id, direction) {
     behavior: "smooth"
   });
 }
-
-/* ==========================================
-   DRAG SCROLL
-========================================== */
 
 document.querySelectorAll(".project-carousel").forEach((slider) => {
   let isDown = false;
@@ -437,14 +408,8 @@ document.querySelectorAll(".project-carousel").forEach((slider) => {
   });
 });
 
-/* ==========================================
-   INIT
-========================================== */
-
 renderProjects(fatecProjects, "fatec-projects");
 renderProjects(personalProjects, "personal-projects");
-
-/* ADICIONE NO SEU JS */
 
 function openProject(project) {
   const details = document.getElementById("projectDetails");
@@ -522,9 +487,6 @@ function closeImage() {
   document.getElementById("imageLightbox").classList.remove("active");
 }
 
-/* =========================
-   BOTÕES DAS SETAS
-========================= */
 function slideProjects(id, direction) {
   const slider = document.getElementById(id);
   const distance = 360;
@@ -535,9 +497,6 @@ function slideProjects(id, direction) {
   });
 }
 
-/* =========================
-   ARRASTAR COM MOUSE
-========================= */
 document.querySelectorAll(".project-carousel").forEach(slider => {
   let isDown = false;
   let startX;

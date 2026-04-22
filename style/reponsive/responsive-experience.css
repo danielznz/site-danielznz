@@ -1,8 +1,3 @@
-/* =====================================================
-   RESPONSIVE EXPERIENCE
-   Breakpoints: tablet ≤ 768px | mobile ≤ 480px
-   ===================================================== */
-
 @media (max-width: 768px) {
 
   .experience-wrapper {
@@ -18,7 +13,6 @@
     margin-bottom: 40px;
   }
 
-  /* empilha tudo em coluna, sem grid de 3 colunas */
   .experience__item {
     display: flex;
     flex-direction: column;
@@ -34,7 +28,6 @@
     margin-bottom: 0;
   }
 
-  /* dot fica na borda esquerda */
   .experience__dot {
     position: absolute;
     left: -7px;
@@ -42,7 +35,6 @@
     margin-top: 0;
   }
 
-  /* esconde a linha central original */
   .experience__line {
     display: none;
   }

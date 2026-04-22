@@ -15,5 +15,17 @@ function renderSkills(listId, skills, type) {
   });
 }
 
+const languages = [
+  { name: "Português", level: "nativo" },
+  { name: "Inglês", level: "intermediário" }
+];
+
+const container = document.getElementById("languages-list");
+
+container.innerHTML = languages
+  .map(lang => `${lang.name} <span>(${lang.level})</span>`)
+  .join(" · ");
+
+
 renderSkills("hard-skills-list", hardSkills, "hard");
 renderSkills("soft-skills-list", softSkills, "soft");
