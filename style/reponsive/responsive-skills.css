@@ -1,44 +1,41 @@
-/* =====================================================
-   RESPONSIVE SKILLS
-   ===================================================== */
-
 @media (max-width: 768px) {
-
-  .skills-wrapper {
-    padding: 60px 0;
-  }
 
   .skills {
     padding: 0 20px;
   }
 
-  .skills__title {
-    font-size: 36px;
-    margin-bottom: 32px;
-  }
-
+  /* empilha os dois grupos em coluna */
   .skills__grid {
     grid-template-columns: 1fr;
-    gap: 32px;
+    gap: 24px;
   }
 
   .skills__subtitle {
-    font-size: 20px;
+    font-size: 32px;
   }
 
   .skills__card {
     padding: 20px;
   }
+
+  .skill-tag {
+    font-size: 14px;
+    padding: 7px 13px;
+  }
 }
 
 @media (max-width: 480px) {
 
-  .skills__title {
-    font-size: 28px;
+  .skills__subtitle {
+    font-size: 26px;
+  }
+
+  .skills__card {
+    padding: 16px;
   }
 
   .skill-tag {
     font-size: 13px;
-    padding: 7px 13px;
+    padding: 6px 12px;
   }
 }
