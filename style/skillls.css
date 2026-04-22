@@ -12,13 +12,6 @@
   padding: 0 40px;
 }
 
-.skills__title {
-  font-size: 48px;
-  font-weight: bold;
-  color: var(--color-text-primary);
-  margin-bottom: 48px;
-}
-
 /* GRID LADO A LADO */
 .skills__grid {
   display: grid;
@@ -35,7 +28,7 @@
 }
 
 .skills__subtitle {
-  font-size: 22px;
+  font-size: 48px;
   font-weight: bold;
   color: var(--color-text-primary);
 }
@@ -61,7 +54,7 @@
 }
 
 .skill-tag {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 600;
   padding: 8px 16px;
   border-radius: 8px;

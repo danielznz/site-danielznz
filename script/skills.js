@@ -1,11 +1,11 @@
 const hardSkills = [
-  "Tailwind CSS", "TypeScript", "React", "Next.js", "API Rest",
-  "Nest.js", "MongoDB", "MySQL", "PostgreSQL", "Prisma", "Git", "Docker"
+  "Javascript", "C#", "C++", "React Native", "Typescript", "HTML", "CSS", "MySQL", "Git",
+  "Photoshop", "Figma"
 ];
 
 const softSkills = [
-  "Aprendizado contínuo", "Comunicação", "Proatividade",
-  "Trabalho em equipe", "Organização"
+  "Curiosidade por ferramentas novas", "Comunicação", "Capacidade de Adaptação", "Criatividade",
+  "Trabalho em equipe", "Organização",
 ];
 
 function renderSkills(listId, skills, type) {
