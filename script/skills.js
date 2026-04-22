@@ -4,7 +4,7 @@ const hardSkills = [
 ];
 
 const softSkills = [
-  "Curiosidade por ferramentas novas", "Comunicação", "Capacidade de Adaptação", "Criatividade",
+  "Aprendizagem contínua", "Comunicação", "Capacidade de Adaptação", "Criatividade",
   "Trabalho em equipe", "Organização",
 ];
 

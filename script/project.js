@@ -4,13 +4,13 @@ const fatecProjects = [
     description:
       "Protótipo de interface criado com foco em design moderno, usabilidade e experiência do usuário.",
 
-    cover: "/assets/img/p1/p1-thumb.png",
+    cover: "./assets/img/p1/p1-thumb.png",
     technologies: ["Figma", "Photoshop"],
 
     github:
       "https://www.figma.com/design/S9ktJk36m1krUVHgomcuxO/Recicle-Aqui?node-id=0-1&t=BNtTTun7oerF4gva-1",
 
-    video: "/assets/img/p1/p1-video.mp4",
+    video: "./assets/img/p1/p1-video.mp4",
 
     aboutProject:
       "Projeto voltado para design de interfaces digitais, desenvolvido com foco em experiência do usuário, identidade visual e navegação intuitiva. O objetivo foi criar um layout moderno e funcional para uma plataforma digital.",
@@ -19,11 +19,11 @@ const fatecProjects = [
       "Fui responsável pela criação visual do projeto, prototipação das telas, definição de cores, organização de conteúdo e aplicação de conceitos de UI/UX utilizando Figma e Photoshop.",
 
     images: [
-      "/assets/img/p1/p1-img1.png",
-      "/assets/img/p1/p1-img2.png",
-      "/assets/img/p1/p1-img3.png",
-      "/assets/img/p1/p1-img4.png",
-      "/assets/img/p1/p1-img5.png"
+      "./assets/img/p1/p1-img1.png",
+      "./assets/img/p1/p1-img2.png",
+      "./assets/img/p1/p1-img3.png",
+      "./assets/img/p1/p1-img4.png",
+      "./assets/img/p1/p1-img5.png"
     ]
   },
 
@@ -32,11 +32,11 @@ const fatecProjects = [
     description:
       "Sistema CRUD completo criado para praticar operações de backend e manipulação de dados.",
 
-    cover: "/assets/img/p2/p2-thumb.png",
+    cover: "./assets/img/p2/p2-thumb.png",
     technologies: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
 
     github: "https://github.com/danielznz/ProvaWebDaniel-main",
-    video: "/assets/img/p2/p2-video.mp4",
+    video: "./assets/img/p2/p2-video.mp4",
 
     aboutProject:
       "Projeto desenvolvido com foco em aprendizado e evolução técnica na área de backend. A aplicação permitia criar, visualizar, editar e remover registros, aplicando na prática os conceitos fundamentais de um sistema CRUD.",
@@ -45,11 +45,11 @@ const fatecProjects = [
       "Fui responsável por desenvolver a lógica da aplicação, integração com banco de dados, operações de cadastro, atualização, exclusão e estruturação do backend.",
 
     images: [
-      "/assets/img/p2/p2-img1.png",
-      "/assets/img/p2/p2-img2.png",
-      "/assets/img/p2/p2-img3.png",
-      "/assets/img/p2/p2-img4.png",
-      "/assets/img/p2/p2-img5.png"
+      "./assets/img/p2/p2-img1.png",
+      "./assets/img/p2/p2-img2.png",
+      "./assets/img/p2/p2-img3.png",
+      "./assets/img/p2/p2-img4.png",
+      "./assets/img/p2/p2-img5.png"
     ]
   },
 
@@ -58,7 +58,7 @@ const fatecProjects = [
     description:
       "Catálogo digital interativo criado para apresentar produtos de forma divertida, moderna e intuitiva.",
 
-    cover: "/assets/img/p3/p3-thumb.png",
+    cover: "./assets/img/p3/p3-thumb.png",
     technologies: ["HTML", "CSS", "JavaScript", "Java", "Spring Boot"],
 
     github: "https://github.com/danielznz/SpringToys",
@@ -71,10 +71,10 @@ const fatecProjects = [
       "Atuei no desenvolvimento do frontend, estilização das páginas, construção das interações em JavaScript e colaboração na integração com backend em Spring Boot.",
 
     images: [
-      "/assets/img/p3/p3-img1.png",
-      "/assets/img/p3/p3-img2.png",
-      "/assets/img/p3/p3-img4.png",
-      "/assets/img/p3/p3-img5.png"
+      "./assets/img/p3/p3-img1.png",
+      "./assets/img/p3/p3-img2.png",
+      "./assets/img/p3/p3-img4.png",
+      "./assets/img/p3/p3-img5.png"
     ]
   },
 
@@ -83,11 +83,11 @@ const fatecProjects = [
     description:
       "Portal web completo para clientes e administradores, com agendamentos, gestão de serviços e relatórios.",
 
-    cover: "/assets/img/p4/p4-thumb.png",
+    cover: "./assets/img/p4/p4-thumb.png",
     technologies: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
 
     github: "https://github.com/danielznz/Projeto-Inter",
-    video: "/assets/img/p4/p4-video.mp4",
+    video: "./assets/img/p4/p4-video.mp4",
 
     aboutProject:
       "Projeto desenvolvido em dupla com o objetivo de digitalizar a rotina de uma barbearia. O sistema atendia clientes e administradores, permitindo agendamentos, cancelamentos, gerenciamento de serviços e emissão de relatórios em PDF.",
@@ -96,11 +96,11 @@ const fatecProjects = [
       "Fui responsável pela modelagem e estruturação do banco de dados utilizando MySQL, além do desenvolvimento backend e regras de negócio da aplicação.",
 
     images: [
-      "/assets/img/p4/p4-img1.png",
-      "/assets/img/p4/p4-img2.png",
-      "/assets/img/p4/p4-img3.png",
-      "/assets/img/p4/p4-img4.png",
-      "/assets/img/p4/p4-img5.png"
+      "./assets/img/p4/p4-img1.png",
+      "./assets/img/p4/p4-img2.png",
+      "./assets/img/p4/p4-img3.png",
+      "./assets/img/p4/p4-img4.png",
+      "./assets/img/p4/p4-img5.png"
     ]
   },
 
@@ -109,7 +109,7 @@ const fatecProjects = [
     description:
       "Aplicativo mobile desenvolvido como solução real para uma barbearia.",
 
-    cover: "/assets/img/p5/p5-thumb.png",
+    cover: "./assets/img/p5/p5-thumb.png",
     technologies: [
       "React Native",
       "TypeScript",
@@ -119,7 +119,7 @@ const fatecProjects = [
     ],
 
     github: "https://github.com/danielznz/PI_5_semestre",
-    video: "/assets/img/p5/p5-video.mp4",
+    video: "./assets/img/p5/p5-video.mp4",
 
     aboutProject:
       "Aplicativo mobile criado como solução real para uma barbearia da zona leste de São Paulo. O sistema permitia agendamentos, gerenciamento de horários, métricas para barbeiros e uma experiência moderna para clientes.",
@@ -128,11 +128,11 @@ const fatecProjects = [
       "Desenvolvi o projeto de forma individual, atuando em todas as etapas: interface, lógica da aplicação, integração com Firebase, prototipação e estrutura geral do sistema.",
 
     images: [
-      "/assets/img/p5/p5-img1.png",
-      "/assets/img/p5/p5-img2.png",
-      "/assets/img/p5/p5-img3.png",
-      "/assets/img/p5/p5-img4.png",
-      "/assets/img/p5/p5-img5.png"
+      "./assets/img/p5/p5-img1.png",
+      "./assets/img/p5/p5-img2.png",
+      "./assets/img/p5/p5-img3.png",
+      "./assets/img/p5/p5-img4.png",
+      "./assets/img/p5/p5-img5.png"
     ]
   }
 ];
@@ -159,9 +159,6 @@ const personalProjects = [
   }
 ];
 
-/* ==========================================
-   TECH BADGES
-========================================== */
 
 function renderTechs(techs = []) {
   return techs
@@ -169,9 +166,6 @@ function renderTechs(techs = []) {
     .join("");
 }
 
-/* ==========================================
-   RENDER DOS CARDS
-========================================== */
 
 function renderProjects(list, containerId) {
   const container = document.getElementById(containerId);
@@ -221,9 +215,6 @@ function renderProjects(list, containerId) {
   });
 }
 
-/* ==========================================
-   ABRIR MODAL
-========================================== */
 
 function openProject(project) {
   const modal = document.getElementById("projectModal");
