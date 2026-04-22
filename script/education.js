@@ -30,7 +30,7 @@ educations.forEach((edu) => {
       <div class="education__card-header">
         <img
           class="education__flag"
-          src="/assets/icons/flags/${edu.country}.png"
+          src="./assets/icons/flags/${edu.country}.png"
           alt="País: ${edu.country.toUpperCase()}"
         />
         <div>
