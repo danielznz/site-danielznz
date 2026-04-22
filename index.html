@@ -4,24 +4,24 @@
 <head>
   <meta charset="UTF-8">
   <title>Portfólio Daniel Teixeira</title>
-  <link rel="stylesheet" href="/style/style.css">
-  <link rel="stylesheet" href="/style/hero.css">
-  <link rel="stylesheet" href="/style/about.css">
-  <link rel="stylesheet" href="/style/project.css">
-  <link rel="stylesheet" href="/style/education.css">
-  <link rel="stylesheet" href="/style/skillls.css">
-  <link rel="stylesheet" href="/style/footer.css">
-  <link rel="stylesheet" href="/style/responsive/responsive-education.css">
-  <link rel="stylesheet" href="/style/reponsive/responsive-hero.css">
-  <link rel="stylesheet" href="/style/reponsive/responsive-about.css">
-  <link rel="stylesheet" href="/style/experience.css">
-  <link rel="stylesheet" href="/style/reponsive/responsive-experience.css">
+  <link rel="stylesheet" href="./style/style.css">
+  <link rel="stylesheet" href="./style/hero.css">
+  <link rel="stylesheet" href="./style/about.css">
+  <link rel="stylesheet" href="./style/project.css">
+  <link rel="stylesheet" href="./style/education.css">
+  <link rel="stylesheet" href="./style/skillls.css">
+  <link rel="stylesheet" href="./style/footer.css">
+  <link rel="stylesheet" href="./style/responsive/responsive-education.css">
+  <link rel="stylesheet" href="./style/reponsive/responsive-hero.css">
+  <link rel="stylesheet" href="./style/reponsive/responsive-about.css">
+  <link rel="stylesheet" href="./style/experience.css">
+  <link rel="stylesheet" href="./style/reponsive/responsive-experience.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
 
-    <link rel="icon" href="/assets/icons/logo.png" type="image/x-icon">
+<link rel="icon" href="./assets/icons/logo.png" type="image/x-icon">
 </head>
 
 <body>
@@ -264,38 +264,38 @@
   </script>
 
   <script>
-const words = ["de Software", "Frontend"];
-let i = 0;
-let j = 0;
-let isDeleting = false;
+    const words = ["de Software", "Frontend"];
+    let i = 0;
+    let j = 0;
+    let isDeleting = false;
 
-const speed = 60;
-const delay = 2000;
+    const speed = 60;
+    const delay = 2000;
 
-function typeEffect() {
-  const currentWord = words[i];
-  const textElement = document.getElementById("dynamic-text");
+    function typeEffect() {
+      const currentWord = words[i];
+      const textElement = document.getElementById("dynamic-text");
 
-  if (isDeleting) {
-    j--;
-  } else {
-    j++;
-  }
+      if (isDeleting) {
+        j--;
+      } else {
+        j++;
+      }
 
-  textElement.textContent = currentWord.substring(0, j);
+      textElement.textContent = currentWord.substring(0, j);
 
-  if (!isDeleting && j === currentWord.length) {
-    setTimeout(() => isDeleting = true, delay);
-  } else if (isDeleting && j === 0) {
-    isDeleting = false;
-    i = (i + 1) % words.length;
-  }
+      if (!isDeleting && j === currentWord.length) {
+        setTimeout(() => isDeleting = true, delay);
+      } else if (isDeleting && j === 0) {
+        isDeleting = false;
+        i = (i + 1) % words.length;
+      }
 
-  setTimeout(typeEffect, isDeleting ? speed / 2 : speed);
-}
+      setTimeout(typeEffect, isDeleting ? speed / 2 : speed);
+    }
 
-typeEffect();
-</script>
+    typeEffect();
+  </script>
   <script src="./script/project.js"></script>
   <script src="./script/experience.js"></script>
   <script src="./script/education.js"></script>
