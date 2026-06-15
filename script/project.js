@@ -134,6 +134,36 @@ const fatecProjects = [
       "./assets/img/p5/p5-img4.png",
       "./assets/img/p5/p5-img5.png"
     ]
+  },
+
+
+    {
+    title: "Ponto Livre | 6º Semestre",
+    description:
+      "PontoLivre — Sistema de Estacionamento Inteligente",
+
+    cover: "./assets/img/p6/p6-thumb.png",
+    technologies: [
+      "Kotlin",
+      "MySQL",
+      "Docker",
+      "C++"
+    ],
+
+    github: "https://github.com/deletrr/PI6",
+    video: "./assets/img/p6/p6-video.mp4",
+
+    aboutProject:
+      "O PontoLivre é uma solução de Estacionamento Inteligente baseada em IoT que utiliza sensores ESP32 e comunicação MQTT para monitorar vagas em tempo real. Integrado às plataformas Web e Mobile, o sistema oferece pagamentos digitais automáticos e fiscalização eficiente, tornando a experiência de estacionamento mais prática em cidades conectadas.",
+
+
+    images: [
+      "./assets/img/p6/p6-img1.png",
+      "./assets/img/p6/p6-img2.png",
+      "./assets/img/p6/p6-img3.png",
+      "./assets/img/p6/p6-img4.png",
+      "./assets/img/p6/p6-img5.png"
+    ]
   }
 ];
 
